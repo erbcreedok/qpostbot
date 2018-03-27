@@ -1,0 +1,73 @@
+.slider-button-left, .slider-button-right {
+  width:  40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  background-color: $white;
+  color: $main-color;
+  border: none;
+  box-shadow: 0 0 15px rgba(#838383,.16);
+  cursor: pointer;
+  span {
+    display: inline-block;
+  }
+  &:hover {
+    background-color: $white - #040404;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+.slider-button-right {
+  margin-right: -2px;
+}
+.slider-button-right {
+  margin-left: -2px;
+}
+.slider-buttons {
+  .slider-button-left, .slider-button-right, .slider-numbers {
+    display: inline-block;
+    margin: 5px 10px;
+  }
+}
+.slider-content {
+  position: relative;
+}
+.slider-element {
+  $duration: 150ms;
+  $delay: 100ms;
+  position: absolute;
+  opacity: 0;
+  top:0;
+  left:0;
+  z-index:1;
+  &.active {
+    position: relative;
+    opacity: 1;
+    z-index:2;
+  }
+  &.next {
+    position: relative;
+    pointer-events: none;
+    z-index: 3;
+    transform: translateX(100px);
+    opacity: 0;
+    animation: fadein-right $duration $delay ease-in forwards;
+    &.reverse {
+      transform: translateX(-100px);
+      animation: fadein-left $duration $delay ease-in forwards;
+    }
+  }
+  &.prev {
+    pointer-events: none;
+    position: absolute;
+    opacity: 1;
+    z-index:2;
+    animation: fadeout-left $duration ease-out forwards;
+    &.reverse {
+      animation: fadeout-right $duration ease-out forwards;
+    }
+  }
+}

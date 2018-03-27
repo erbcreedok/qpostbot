@@ -1,0 +1,18 @@
+.fourth-section {
+  .digit {
+    font-size: 3.6rem;
+    color: $main-color;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .digit-container {
+    text-align: center;
+    width: 260px;
+    margin: 20px auto 40px;
+  }
+  @include media-breakpoint-up(md) {
+    .digit-container {
+      text-align: left;
+    }
+  }
+}

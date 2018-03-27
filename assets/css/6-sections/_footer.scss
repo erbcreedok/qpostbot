@@ -1,0 +1,20 @@
+footer {
+  background: $black;
+  color: $white;
+  a, a:hover {
+    text-decoration: none;
+    margin-bottom: 1rem;
+  }
+  .social-links {
+    font-size: 1.8rem;
+    a {
+      display: inline-block;
+      margin: 0 10px;
+    }
+  }
+  hr{
+    height: 1px;
+    background: rgba(#BCC6D0,40px);
+    margin-bottom: 50px;
+  }
+}

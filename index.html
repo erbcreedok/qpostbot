@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="This is a boilerplate for a Bootstrap 4.0.0 project">
-    <meta name="keywords" content="HTML, CSS, JS, Sass, JavaScript, framework, bootstrap, front-end, frontend, web development">
-    <meta name="author" content="Henrik H. Boelsmand">
-    <title>Bootstrap 4 boilerplate</title>
+    <meta name="description" content="DRM - Dream Rasul Mashurov">
+    <meta name="keywords" content="DRM - Dream Rasul Mashurov">
+    <meta name="author" content="Rasul Mashurov">
+    <title>DRM - Dream Rasul Mashurov</title>
     <link rel="shortcut icon" href="favicon.ico">
 
     <!-- build:css -->
@@ -16,50 +16,374 @@
   </head>
 
   <body>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-           <a class="navbar-brand" href=".">Navbar</a>
-           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-           </button>
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container">
+       <a class="navbar-brand" href=".">
+           <span class="icon-logo"></span>
+       </a>
+       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon">
+             <span class="navbar-toggler-icon-line"></span>
+         </span>
+       </button>
 
-           <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-             <ul class="navbar-nav mr-auto">
-               <li class="nav-item active">
-                 <a class="nav-link" href=".">Home <span class="sr-only">(current)</span></a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="#">Link</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link disabled" href="#">Disabled</a>
-               </li>
-               <li class="nav-item dropdown">
-                 <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                 <div class="dropdown-menu" aria-labelledby="dropdown01">
-                   <a class="dropdown-item" href="#">Action</a>
-                   <a class="dropdown-item" href="#">Another action</a>
-                   <a class="dropdown-item" href="#">Something else here</a>
-                 </div>
-               </li>
-             </ul>
-             <form class="form-inline my-2 my-lg-0">
-               <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-               <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-             </form>
+       <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+         <ul class="navbar-nav mx-auto justify-content-around">
+           <li class="nav-item active">
+             <a class="nav-link" href=".">Главная <span class="sr-only">(current)</span></a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">Инкубатор</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">Полезное</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">Этапы</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">Контакты</a>
+           </li>
+           <li class="nav-item">
+             <a class="nav-link" href="#">Регистрация</a>
+           </li>
+         </ul>
+         <ul class="navbar-nav">
+             <li class="nav-item">
+                 <a class="nav-link" href="tel: +77751422212" title="8 (775) 142 22 12">
+                     <span class="icon-phone color-main mr-2"></span>
+                     <span class="d-md-none d-lg-inline-block">8 (775) 142 22 12</span>
+                 </a>
+             </li>
+         </ul>
+       </div>
+      </div>
+    </nav>
+    <section class="first-section d-flex align-items-center">
+     <div class="container text-center">
+       <h1 class="main-title">Акселерационная программа Университета «ETU»</h1>
+       <div class="main-info row">
+           <div class="col-4">
+               <div class="digit-container">
+                   <p>
+                       <span class="digit">300+</span><br>
+                       кв. метров пространства
+                   </p>
+               </div>
            </div>
-        </nav>
-
-         <div class="container">
-
-           <div style="padding-top:120px; text-align:center;">
-                <h1>Hello world!</h1>
-                <p class="lead">Remove this content or build upon it.<br>
-                For documentation and examples: <a href="http://getbootstrap.com/" target="_blank">getbootstrap.com</a><br>
-                Here is a <a href="newpage.html">link to another page</a></p>
+           <div class="col-4">
+               <div class="digit-container">
+                   <p>
+                       <span class="digit">7</span><br>
+                       опытных менторов
+                   </p>
+               </div>
            </div>
+           <div class="col-4">
+               <div class="digit-container">
+                   <p>
+                   <span class="digit">4</span><br>
+                   месяцев практики
+                   </p>
+               </div>
+           </div>
+       </div>
+       <button class="btn btn-primary">
+           <span class="text-uppercase">Подать заявку</span>
+       </button>
+     </div>
+    </section>
+    <section class="second-section pad-this-y">
+        <div class="container">
+            <h2 class="mb-5">
+                Кто мы такие ?
+            </h2>
+            <p class="color-gray">
+                Мы организация, которая дает возможность всем студентам бакалавриата, магистратуры и выпускникам “ETU” запустить работающий бизнес за 4 месяца.
+            </p>
+        </div>
+    </section>
+    <section class="third-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6" style="background: url(assets/img/img_2.jpg) center; min-height: 213px; background-size: cover">
+                </div>
+                <div class="col-md-6 bg-whitegray">
+                    <div class="semi-container pad-this-y mx-auto ml-md-0">
+                        <div class="row text-center text-md-left mx-auto mr-md-0" style="max-width: 500px">
+                            <div class="col-12 block">
+                                <h4 class="block-title">
+                                    Немного о нас
+                                </h4>
+                                <p class="color-gray-secondary" style="max-width: 440px">
+                                    Бизнес-инкубатор работает по принципу  акселератора  – модель поддержки бизнесов на ранней стадии предполагает интенсивное развитие проекта в кратчайшие сроки.
+                                </p>
+                            </div>
+                            <div class="col-md-6 block">
+                                <h4 class="block-title">
+                                    <span class="block-icon icon-mission color-main"></span>
+                                    Наша миссия
+                                </h4>
+                                <p class="color-gray-secondary">
+                                    Мы предоставляем посевные инвестиции, использование нашей инфраструктуры, помощь в разработке бизнес-модели
+                                </p>
+                            </div>
+                            <div class="col-md-6 block">
+                                <h4 class="block-title">
+                                    <span class="block-icon icon-planning color-main"></span>
+                                    Дата запуска
+                                </h4>
+                                <p class="color-gray-secondary">
+                                    Запуск программы:<br>
+                                    15 Апрель, 2018г<br>
+                                    <br>
+                                    День инфестора(Demo Day):<br>
+                                    23 Май, 2018г.
+                                </p>
+                            </div>
+                        </div>
 
-         </div>
-
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fourth-section pad-this-y">
+        <div class="container">
+            <h2 class="text-center">
+                Что дает программа ?
+            </h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="digit-container">
+                        <span class="digit">01</span>
+                        <p class="color-black-default">
+                            Помогает найти новые направления и ниши в бизнесе, а также масштабировать их
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="digit-container">
+                        <span class="digit">02</span>
+                        <p class="color-black-default">
+                            Помогает протестировать и найти новые каналы продаж под присмотром менторов
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="digit-container">
+                        <span class="digit">03</span>
+                        <p class="color-black-default">
+                            Участники получают комплект инструментов и инструкций, необходимых для развития бизнеса
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="digit-container">
+                        <span class="digit">04</span>
+                        <p class="color-black-default">
+                            Навыки публичных выступлений, презентации проектов и рабочее место в коворкинге
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="digit-container">
+                        <span class="digit">05</span>
+                        <p class="color-black-default">
+                            Профессиональные консультации юриста и бухгалтера для достижения конкретных целей
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="digit-container">
+                        <span class="digit">06</span>
+                        <p class="color-black-default">
+                            Бизнес партнеров и новых друзей, которые непосредственно приводят к личностному росту
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <button class="btn btn-primary">
+                    <span class="text-uppercase">Стать участником</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <section class="fifth-section pad-this-y">
+        <div class="container">
+            <h2 class="text-center">
+                Что нужно знать ?
+            </h2>
+        </div>
+        <div class="container-fluid pad-this-y">
+            <div class="row">
+                <div class="col-md-6 bg-image" style="background: url(assets/img/img_3.jpg) center; min-height: 210px; background-size: cover">
+                </div>
+                <div class="col-md-6 bg-whitegray">
+                    <div class="semi-container pad-this-y mx-auto mr-md-0">
+                        <div class="row text-center text-md-left mx-auto ml-md-0" style="max-width: 500px">
+                            <div class="col-12 block slider-content" id="slider-content">
+                                <div class="slider-element active">
+                                    <h4 class="block-title mb-4">
+                                        1. Отбор проектов
+                                    </h4>
+                                    <p class="color-gray-secondary mx-auto mx-md-0" style="max-width: 440px">
+                                        На встрече вы получите возможность подробнее рассказать о своем проекте, а мы - познакомиться с командой и идеей, выявить их сильные и слабые стороны, а также понять, как мы можем помочь вам построить ваш бизнес и сможете ли вы работать в формате Инкубатора.
+                                    </p>
+                                </div>
+                                <div class="slider-element">
+                                    <h4 class="block-title mb-4">
+                                        2. Юридическая поддержка
+                                    </h4>
+                                    <p class="color-gray-secondary mx-auto mx-md-0" style="max-width: 440px">
+                                        Для нас важно, чтобы резиденты сосредоточили силы на своем проекте и не тратили время на очередях, поэтому мы помогаем компаниям, используя стандартный пакет документов, открыть юридическое лицо и правильным образом оформить юридическую собственность.
+                                    </p>
+                                </div>
+                                <div class="slider-element">
+                                    <h4 class="block-title mb-4">
+                                        3. Обучение, развитие и «упаковка проекта»
+                                    </h4>
+                                    <p class="color-gray-secondary mx-auto mx-md-0" style="max-width: 440px">
+                                        В течение 3 месяцев все проекты получают возможность участвовать в программе обучения. Два месяц проекты обучаются по программе, которая собрала в себе все самое лучшее от учебных курсов в области customer development и управлении разработкой продукта (product development).
+                                    </p>
+                                </div>
+                                <div class="slider-element">
+                                    <h4 class="block-title mb-4">
+                                        4. Консультации
+                                    </h4>
+                                    <p class="color-gray-secondary mx-auto mx-md-0" style="max-width: 440px">
+                                        Консультирует резидентов заранее определенный куратор из числа членов команды инкубатора. Куратор – друг проекта, он знаком со всем, что происходит внутри компании, консультирует команду по возникающим вопросам, снабжает ее необходимыми контактами.
+                                    </p>
+                                </div>
+                                <div class="slider-element">
+                                    <h4 class="block-title mb-4">
+                                        5. Помощь в развитии и «упаковке» проекта
+                                    </h4>
+                                    <p class="color-gray-secondary mx-auto mx-md-0" style="max-width: 440px">
+                                        Перед Demo Day команды вместе со своими кураторами активно занимаются «упаковкой» проекта, в том числе учатся elevator pitch.
+                                    </p>
+                                </div>
+                                <div class="slider-element">
+                                    <h4 class="block-title mb-4">
+                                        6. День инвестора (Demo Day)
+                                    </h4>
+                                    <p class="color-gray-secondary mx-auto mx-md-0" style="max-width: 440px">
+                                        По статистике, более половины наших резидентов привлекает инвестиции от инвесторов, с которыми они познакомились на Дне инвестора (Demo Day). Это неоценимый шанс привлечь деньги и выйти на новый уровень.
+                                    </p>
+                                </div>
+                                <div class="slider-element">
+                                    <h4 class="block-title mb-4">
+                                        7. Помощь в привлечении инвестиций
+                                    </h4>
+                                    <p class="color-gray-secondary mx-auto mx-md-0" style="max-width: 440px">
+                                        День инвестора – это важное мероприятие, на котором можно познакомиться с инвесторами. В течение последующих 1,5 месяцев мы помогаем нашим резидентам с привлечением инвестиций.
+                                    </p>
+                                </div>
+                                <div class="slider-element">
+                                    <h4 class="block-title mb-4">
+                                        8. Выпускной
+                                    </h4>
+                                    <p class="color-gray-secondary mx-auto mx-md-0" style="max-width: 440px">
+                                        Наши выпускники - это неоценимая сеть контактов, которая готова всегда прийти на помощь новоиспеченным предпринимателям: дать совет или познакомить с инвесторами или потенциальными клиентами.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="slider-buttons mx-auto mr-md-0 px-3">
+                                <button class="slider-button-left" data-target="#slider-content">
+                                    <span class="icon-arrow-left"></span>
+                                </button>
+                                <p class="slider-numbers">
+                                    <span class="slider-number-active">1</span>/<span class="slider-number-all">8</span>
+                                </p>
+                                <button class="slider-button-right" data-target="#slider-content">
+                                    <span class="icon-arrow-right"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="sixth-section pad-this-y pt-0">
+        <div class="container">
+            <h2 class="text-center mb-5">
+                Наши контакты
+            </h2>
+            <div class="row justify-content-lg-between">
+                <p class="font-bigger col-sm-6 col-lg-auto col-12">
+                    <span class="block-icon icon-phone"></span>
+                    8 (775) 142 22 12
+                </p>
+                <p class="font-bigger col-sm-6 col-lg-auto col-12">
+                    <span class="block-icon icon-email"></span>
+                    drm_mail@info.com
+                </p>
+                <p class="font-bigger col-sm-6 col-lg-auto col-12">
+                    <span class="block-icon icon-clock"></span>
+                    09:00 - 22:00, Пн - Вс
+                </p>
+                <p class="font-bigger col-sm-6 col-lg-auto col-12">
+                    <span class="block-icon icon-directions"></span>
+                    ул. Муратбаева 94, к. 31, г. Алматы
+                </p>
+            </div>
+            <div class="map-container my-4">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=tpYGtqNRa3kNFvV6so0m5i8R6xniMP48&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false"></script>
+            </div>
+        </div>
+    </section>
+    <section class="seventh-section pad-this-y">
+        <div class="container color-white">
+            <h2 class="text-center my-5">Спешите записаться</h2>
+            <p class="text-center py-2 pb-5 mx-auto paragraph">
+                Для быстрого выхода компаний на рынок мы предоставляем посевные инвестиции, использование нашей инфраструктуры, помощь в разработке бизнес-модели, а главное – возможность за  4 месяца превратить идею в работающий бизнес.
+            </p>
+            <div class="text-center my-5">
+                <button class="btn btn-secondary">
+                    <span class="text-uppercase">Записаться</span>
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer class="footer pad-this-y">
+        <div class="container">
+            <div class="row">
+                <div class="mb-5 mx-auto ml-md-0 col-md-auto col-12 text-center">
+                    <a href="#">
+                        <span class="icon-logo-secondary color-white" style="font-size: 3rem"></span>
+                    </a>
+                </div>
+                <div class="mb-5 mx-auto mr-md-0 col-md-auto col-12 social-links text-center" style="font-size: 1.8rem">
+                    <a href="#">
+                        <span class="icon-instagram color-white"></span>
+                    </a>
+                    <a href="#">
+                        <span class="icon-facebook color-white"></span>
+                    </a>
+                    <a href="#">
+                        <span class="icon-gmail color-white"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr/>
+        <div class="container">
+            <div class="row" style="font-size: 1.2rem">
+                <div class="mb-5 mx-auto ml-md-0 col-md-auto col-12 text-center text-md-left">
+                    <p class="mx-auto" style="width: 300px">
+                        Мы организация, которая дает возможность всем студентам бакалавриата, магистратуры и выпускникам “ETU” запустить работающий бизнес за 4 месяца.
+                    </p>
+                </div>
+                <div class="mb-5 mx-auto mr-md-0 col-md-auto col-12 text-center">
+                    <p>
+                        © DRM.COM, 2018
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
     <!-- build:js -->
     <script src="assets/js/main.js"></script>
      <!-- endbuild -->

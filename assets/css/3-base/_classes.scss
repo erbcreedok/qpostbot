@@ -1,0 +1,22 @@
+.text-uppercase {
+  text-transform: uppercase;
+}
+.pad-this-y {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.font-bigger {
+  font-size: 1.6rem;
+}
+.fadein-left {
+  animation: fadein-left 200ms ease-in forwards;
+}
+.fadein-right {
+  animation: fadein-right 200ms ease-in forwards;
+}
+.fadeout-left {
+  animation: fadeout-left 200ms ease-out forwards;
+}
+.fadeout-right {
+  animation: fadeout-right 200ms ease-out forwards;
+}

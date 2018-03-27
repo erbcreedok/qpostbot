@@ -7,5 +7,16 @@
 // Font stacks
 
 // Asset paths
-$path-image   :   '../img';
+$path-image     :   '../img';
 $path-fonts     :  '../fonts';
+$path-font-main: $path-fonts + '/montserrat';
+$green: #00CA9D;
+$yellow: #EDBA66;
+$main-color: $green;
+$secondary-color: $yellow;
+$white: #ffffff;
+$black: #000000;
+$black-default: #2B2B2B;
+$gray-default: #898989;
+$gray-secondary: #747474;
+$whitegray-default: #FAF9F9;

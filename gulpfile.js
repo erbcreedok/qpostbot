@@ -17,6 +17,7 @@ gulp.task("concatScripts", function() {
         'assets/js/vendor/jquery-3.2.1.slim.min.js',
         'assets/js/vendor/popper.min.js',
         'assets/js/vendor/bootstrap.min.js',
+        'assets/js/slider.js',
         'assets/js/functions.js'
         ])
     .pipe(maps.init())
