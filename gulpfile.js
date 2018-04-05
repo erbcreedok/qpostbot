@@ -18,7 +18,11 @@ gulp.task("concatScripts", function() {
         'assets/js/vendor/popper.min.js',
         'assets/js/vendor/bootstrap.min.js',
         'assets/js/vendor/jquery.waypoints.js',
-        'assets/js/slider.js',
+        'assets/js/vendor/inputmask.js',
+        'assets/js/vendor/inputmask.phone.extensions.js',
+        'assets/js/vendor/slick.min.js',
+        'assets/js/vendor/jquery.magnific-popup.min.js',
+        'assets/js/functions/nav.js',
         'assets/js/functions.js'
         ])
     .pipe(maps.init())

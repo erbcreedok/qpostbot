@@ -1,9 +1,47 @@
 .text-uppercase {
   text-transform: uppercase;
 }
-.pad-this-y {
+.pt-12 {
+  padding-top: 120px;
+}
+.pt-50 {
   padding-top: 50px;
+}
+.pt-6 {
+  padding-top: 60px;
+}
+.pb-12 {
+  padding-bottom: 120px;
+}
+.pb-50 {
   padding-bottom: 50px;
+}
+.pb-6 {
+  padding-bottom: 60px;
+}
+.py-12 {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.py-6 {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.mb-50 {
+  margin-bottom: 50px;
+}
+.mb-6 {
+  margin-bottom: 60px;
+}
+.my-50 {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+@include media-breakpoint-up(md) {
+  .px-md-9 {
+    padding-left: 90px !important;
+    padding-right: 90px !important;
+  }
 }
 .font-bigger {
   font-size: 1.6rem;
@@ -19,4 +57,40 @@
 }
 .fadeout-right {
   animation: fadeout-right 200ms ease-out forwards;
+}
+.big-number {
+  font-size: 3.6rem;
+  color: transparent;
+  background: $main-color; /* Old browsers */
+  background: -moz-linear-gradient(top, #31bd9b 0%, #5d97d4 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #31bd9b 0%,#5d97d4 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #31bd9b 0%,#5d97d4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#31bd9b', endColorstr='#5d97d4',GradientType=0 ); /* IE6-9 */
+  -webkit-background-clip: text;
+}
+.number-container {
+  max-width: 130px;
+  .big-number {
+    margin-bottom: 0;
+  }
+}
+.round-30 {
+  width:  30px;
+  height: 30px;
+  line-height: 32px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  color: $white;
+  border: 1px solid transparent;
+}
+.round-25 {
+  width:  25px;
+  height: 25px;
+  line-height: 26px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 50%;
+  color: $white;
+  border: 1px solid transparent;
 }

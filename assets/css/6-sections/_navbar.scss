@@ -1,7 +1,7 @@
 .navbar {
-  font-size: 1.6rem;
-  padding: 10px 0;
-  transition: background 150ms;
+  font-size: 1.4rem;
+  padding: 20px 0 0;
+  transition: background 150ms, padding 150ms 150ms;
 }
 .navbar-brand {
   span {
@@ -30,7 +30,7 @@
       width: 20px;
       height: 2px;
       border-radius: 1px;
-      background: $main-color;
+      background: $black;
       position: absolute;
       top: 0;
       bottom: 0;
@@ -67,7 +67,7 @@
     @include expanded();
   }
 }
-.nav-link, .nav-link:hover {
+.nav-link, .nav-link:hover, .nav-item-subtitle {
   color: $white;
   transition: color 150ms;
 }
@@ -76,6 +76,20 @@
   padding-right: 20px;
 }
 
+.main-nav .nav-item .nav-link {
+  text-transform: uppercase;
+}
+.phone-nav .phone-link {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.phone-nav .nav-item-subtitle {
+  position: absolute;
+  margin-bottom: 0;
+  padding: 0 0.25rem;
+}
 @mixin underline($color) {
   &:after {
     width: 100%;
@@ -98,19 +112,29 @@
 }
 @mixin filled-navbar() {
   background: $white;
-  color: $main-color;
+  padding: 10px 0;
+  color: $black;
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  .navbar-brand span, .nav-link, .nav-link:hover {
+  .navbar-brand span, .nav-link, .nav-link:hover, .nav-item-subtitle {
     color: $black;
+  }
+  .phone-nav .nav-item-subtitle {
+    position: static;
+    padding: 0;
   }
   @include media-breakpoint-down(sm) {
     background: $white;
-    color: $main-color;
+    color: $black;
     .navbar-brand span{
-      color: $main-color;
+      color: $black;
     }
     .nav-link, .nav-link:hover {
       color: $black;
+    }
+  }
+  @include media-breakpoint-up(md) {
+    .main-nav .nav-item.active{
+      @include underline($black);
     }
   }
 }
@@ -127,7 +151,7 @@
   .nav-item {
     padding: 10px 0 10px 10px;
     &.active {
-      @include leftline($main-color);
+      @include leftline($black);
     }
   }
 }
@@ -149,7 +173,7 @@
       opacity: 0.7;
     }
     &.active{
-      @include underline($main-color);
+      @include underline($white);
     }
   }
 }

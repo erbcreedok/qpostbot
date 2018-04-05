@@ -9,14 +9,18 @@
 // Asset paths
 $path-image     :   '../img';
 $path-fonts     :  '../fonts';
-$path-font-main: $path-fonts + '/montserrat';
-$green: #00CA9D;
+$path-font-main: $path-fonts + '/PTSans';
+$green: #43C1A5;
 $yellow: #EDBA66;
-$main-color: $green;
-$secondary-color: $yellow;
+$blue: #4F92D7;
+$link-color: #4286CC;
+$main-color: $blue;
+$secondary-color: $green;
 $white: #ffffff;
 $black: #000000;
-$black-default: #2B2B2B;
-$gray-default: #898989;
+$black-default: #333333;
 $gray-secondary: #747474;
-$whitegray-default: #FAF9F9;
+$gray-default: #9B9B9B;
+$lightgray-default: #C2C2C2;
+$whitegray-default: #F2F2F2;
+$whitegray-secondary: #EFEFEF;

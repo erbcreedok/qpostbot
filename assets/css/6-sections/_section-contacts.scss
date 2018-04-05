@@ -1,0 +1,19 @@
+.section-contacts {
+  .map-container {
+    height: 516px;
+  }
+  #map {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 516px;
+  }
+  .box {
+    position: relative;
+    max-width: 365px;
+    padding: 45px;
+    background-color: $white;
+    color: $black-default;
+    box-shadow: 0 0 10px rgba($lightgray-default, .5);
+  }
+}

@@ -1,20 +1,29 @@
-.slider-button-left, .slider-button-right {
-  width:  40px;
-  height: 40px;
-  line-height: 40px;
+.slider-arrow, .slider-button-left, .slider-button-right {
+  width:  30px;
+  height: 30px;
+  line-height: 32px;
   text-align: center;
   vertical-align: middle;
   border-radius: 50%;
-  background-color: $white;
-  color: $main-color;
-  border: none;
-  box-shadow: 0 0 15px rgba(#838383,.16);
+  background-color: transparent;
+  color: $white;
+  border: 1px solid $white;
   cursor: pointer;
+  margin: 0 1rem;
+  &.slider-arrow-blue {
+    background-color: $main-color;
+    border-color: $main-color;
+    &:hover {
+      background-color: $main-color - #222;
+      border-color: $main-color - #222;
+    }
+  }
   span {
     display: inline-block;
   }
   &:hover {
-    background-color: $white - #040404;
+    border-color: $secondary-color;
+    background: $secondary-color;
   }
   &:focus {
     outline: none;
@@ -70,4 +79,8 @@
       animation: fadeout-right $duration ease-out forwards;
     }
   }
+}
+
+.slick-slide {
+  outline: none !important;
 }

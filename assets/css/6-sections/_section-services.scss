@@ -1,0 +1,38 @@
+.section-services {
+  .vertical-nav {
+    padding: 0;
+    list-style-type: none;
+    li {
+      position: relative;
+      padding-left: 1.4rem;
+      margin: 1.5rem 0;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: 150ms;
+    }
+    li:before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto 0 auto -1.4rem;
+      content: "•";
+      height: 24px;
+      transition: 150ms;
+    }
+    li.active {
+      &:before {
+        font-size: 2.2rem;
+        line-height: 2.4rem;
+        color: $secondary-color;
+      }
+      padding-left: 2.5rem;
+      color: $black-default;
+    }
+    li:hover, li.hover {
+      &:before {
+        color: $secondary-color;
+      }
+      color: $black-default;
+    }
+  }
+}

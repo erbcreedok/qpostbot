@@ -1,51 +1,33 @@
 $( document ).ready(function() {
-    var nav = $('nav');
-    var navItems = $('.navbar .main-nav li');
-
-    var navbarCheck = function() {
-        nav.toggleClass('navbar-filled', window.scrollY > 0);
-    }
-
-    navbarCheck();
-
-    $('.navbar .main-nav li a').bind('click', function(e) {
-        e.preventDefault();
-        var id = $(this).attr('href');
-        var elementOffset = document.querySelector(id).offsetTop;
-        $('html, body').animate({
-            scrollTop: elementOffset - 100
-        }, '1000');
-        console.log(elementOffset);
+    $('.first-section').slick({
+        arrows: false,
+        dots: false,
+        draggable: false,
+        swipe: false,
+        fade: true,
+        touchMove: false,
+        autoplay: true,
+        autoplaySpeed: 8000
+    });
+    $('.first-section .slider-arrow.slider-arrow-next').click(function () {
+        $('.first-section').slick('slickNext');
+    });
+    $('.first-section .slider-arrow.slider-arrow-prev').click(function () {
+        $('.first-section').slick('slickPrev');
     });
 
-    $(document).scroll(function() {
-        navbarCheck();
-    });
-
-    var checkWaypoint = function( waypoint ) {
-        var hash = $(waypoint.element).attr('id');
-        var noOne = true;
-        $.each(navItems, function(i) {
-            var b = $(this).children('a').attr('href').slice(1) === hash;
-            $(this).toggleClass('active', b);
-            if (b && i!==0) {
-                noOne = false;
+    $('.certificates').slick({
+        dots: false,
+        slidesToShow: 3,
+        prevArrow: '<div class="slider-arrow slider-arrow-blue slider-arrow-prev"><span class="icon-arrow-left"></span></div>',
+        nextArrow: '<div class="slider-arrow slider-arrow-blue slider-arrow-next"><span class="icon-arrow-right"></span></div>',
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
             }
-        });
-        $(navItems[0]).toggleClass('active', noOne);
-    };
-
-    var sections = $('section');
-
-    sections.waypoint(function(direction) {
-        if (direction === 'up') {
-            checkWaypoint(this);
-        }
-    }, { offset: 90 });
-
-    sections.waypoint(function(direction) {
-        if (direction === 'down') {
-            checkWaypoint(this);
-        }
-    }, { offset: 110 });
+        ]
+    });
 });

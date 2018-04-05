@@ -4,11 +4,20 @@
 .bg-main {
   background-color: $main-color;
 }
+.border-main {
+  border-color: $main-color;
+}
+.color-secondary {
+  color: $secondary-color;
+}
 .color-white {
   color: $white;
 }
 .color-gray {
   color: $gray-default;
+}
+.bg-gray {
+  background: $gray-default;
 }
 .color-gray-secondary {
   color: $gray-secondary;
@@ -16,9 +25,12 @@
 .color-whitegray {
   color: $whitegray-default;
 }
+.bg-whitegray {
+  background-color: $whitegray-default;
+}
 .color-black-default {
   color: $black-default;
 }
-.bg-whitegray {
-  background-color: $whitegray-default;
+.color-lightgray-default {
+  color: $lightgray-default;
 }

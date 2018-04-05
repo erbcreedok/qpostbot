@@ -1,15 +1,20 @@
 footer {
-  background: $black;
-  color: $white;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  border-top: 1px solid $whitegray-secondary;
   a, a:hover {
     text-decoration: none;
     margin-bottom: 1rem;
   }
   .social-links {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     a {
       display: inline-block;
       margin: 0 10px;
+      color: inherit;
+      &:hover {
+        background: $secondary-color;
+      }
     }
   }
   hr{
