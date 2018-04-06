@@ -18,52 +18,53 @@
 
   <body>
     <input type="hidden" value="services" id="sitepage">
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <div class="container">
-          <a class="navbar-brand" href=".">
-              <span class="icon-logo"></span>
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="d-none d-md-inline-block mr-3"> Меню </span>
-              <span class="navbar-toggler-icon">
+    <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href=".">
+                <span class="d-none d-sm-inline-block d-md-none d-lg-inline-block icon-logo"></span>
+                <span class="d-inline-block d-sm-none d-md-inline-block d-lg-none icon-logo-small"></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNavbar" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="d-none d-md-inline-block mr-3"> Меню </span>
+                <span class="navbar-toggler-icon">
              <span class="navbar-toggler-icon-line"></span>
          </span>
-          </button>
+            </button>
 
-          <div class="collapse navbar-collapse" id="mainNavbar">
-              <ul class="navbar-nav main-nav mx-auto justify-content-around">
-                  <li class="nav-item active">
-                      <a class="nav-link" href="index.html#main">Главная <span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="index.html#about">О Компании</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="index.html#services">Услуги</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="index.html#partners">Клиенты/Партнеры</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="index.html#certificates">Сертификаты</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="index.html#contacts">Контакты</a>
-                  </li>
-              </ul>
-              <ul class="navbar-nav phone-nav">
-                  <li class="nav-item">
-                      <a class="phone-link nav-link" href="tel: +77751422212" title="8 (775) 142 22 12">
-                          <span >8 717 257-05-88</span>
-                      </a>
-                      <p class="nav-item-subtitle">
-                          Бесплатно по Казахстану
-                      </p>
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </nav>
+            <div class="collapse navbar-collapse" id="mainNavbar">
+                <ul class="navbar-nav main-nav mx-auto justify-content-around">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#main">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#about">О Компании</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#services">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#partners">Клиенты/Партнеры</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#certificates">Сертификаты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contacts">Контакты</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav phone-nav">
+                    <li class="nav-item">
+                        <a class="phone-link nav-link" href="tel: +77751422212" title="8 (775) 142 22 12">
+                            <span >8 717 257-05-88</span>
+                        </a>
+                        <p class="nav-item-subtitle">
+                            Бесплатно по Казахстану
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <section id="main" class="first-section">
         <section class="subsection d-flex align-items-center" style="background-color: #1A191F; background-image:  url(assets/img/bg4.jpg)">
             <div class="container">
@@ -291,7 +292,7 @@
                             <span class="icon-instagram"></span>
                         </a>
                         <a href="#" class="d-inline-block round-25 bg-gray">
-                            <span class="icon-gmail"></span>
+                            <span class="icon-google-plus"></span>
                         </a>
                     </p>
                 </div>
@@ -314,8 +315,10 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <p class="modal-title" id="callbackModalLabel" style="font-size: 2.6rem">Отправьте нам заявку и мы свяжемся с вами</p>
-                    <button type="button" class="close modal-closer" style="font-size: 3.6rem;line-height: 3.9rem;" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+                    <button type="button" class="close modal-closer" style="font-size: 1.6rem;line-height: 4.6rem;" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">
+                            <span class="icon-close"></span>
+                        </span>
                     </button>
                     <hr class="modal-hr">
                     <form id="callbackForm" class="row">
@@ -347,8 +350,8 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <p class="h2 text-center font-weight-bold my-6">
-                        Большое спасибо!<br>
-                        Ваша заявка принята :D
+                        Большое спасибо! :D<br>
+                        Ваша заявка принята <span class="icon-checkmark"></span>
                     </p>
                     <p class="notifier text-right">
                         <a href="#" data-dismiss="modal" class="color-gray">Закрыть</a>

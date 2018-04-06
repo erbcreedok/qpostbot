@@ -29,7 +29,7 @@
 //GothamPro - Bold (700)
 @font-face {
   font-family: 'GothamPro';
-  src: local('GothamPro Bold '), url($path-fonts + 'GothamPro/GothamPro-Bold.ttf') format('truetype');
+  src: local('GothamPro Bold '), url($path-fonts + '/GothamPro/GothamPro-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
