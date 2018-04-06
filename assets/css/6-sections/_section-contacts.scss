@@ -25,10 +25,17 @@
     max-width: 365px;
     background-color: $white;
     color: $black-default;
+    hr {
+      opacity: 0;
+      visibility: hidden;
+      margin: 5px 0;
+    }
     @include media-breakpoint-up(md) {
       padding: 45px;
       hr {
-        margin: 0 !important;
+        opacity: 1;
+        visibility: visible;
+        margin: 25.5px -45px;
       }
       box-shadow: 0 0 10px rgba($lightgray-default, .5);
     }

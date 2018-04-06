@@ -27,6 +27,9 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.pl-45 {
+  padding-left: 45px !important;
+}
 .px-40 {
   padding-left: 40px;
   padding-right: 40px;
@@ -85,6 +88,8 @@
 }
 .big-number {
   font-size: 3.6rem;
+  font-family: 'GothamPro', Helvetica, Arial, sans-serif;
+  font-weight: bold;
   color: transparent;
   background: $main-color; /* Old browsers */
   background: -moz-linear-gradient(top, #31bd9b 0%, #5d97d4 100%); /* FF3.6-15 */
@@ -126,5 +131,11 @@
 @include media-breakpoint-only(xs) {
   .word-break-xs-only {
     word-break: break-word;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .pl-md-0 {
+    padding-left: 0 !important;
   }
 }

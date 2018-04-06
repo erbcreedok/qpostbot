@@ -12,5 +12,11 @@ $(document).scroll(function() {
     navbarCheck();
 });
 
+$('.navbar .main-nav li a').on('click', function(e) {
+    setTimeout(function() {
+        $("#mainNavbar").collapse('hide');
+    }, 300);
+});
+
 
 });

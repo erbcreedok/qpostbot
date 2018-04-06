@@ -9473,6 +9473,9 @@ h4, .h4 {
   padding-top: 60px;
   padding-bottom: 60px; }
 
+.pl-45 {
+  padding-left: 45px !important; }
+
 .px-40 {
   padding-left: 40px;
   padding-right: 40px; }
@@ -9534,6 +9537,8 @@ h4, .h4 {
 
 .big-number {
   font-size: 3.6rem;
+  font-family: 'GothamPro', Helvetica, Arial, sans-serif;
+  font-weight: bold;
   color: transparent;
   background: #4F92D7;
   /* Old browsers */
@@ -9576,6 +9581,10 @@ h4, .h4 {
 @media (max-width: 575.98px) {
   .word-break-xs-only {
     word-break: break-word; } }
+
+@media (min-width: 768px) {
+  .pl-md-0 {
+    padding-left: 0 !important; } }
 
 @-webkit-keyframes fadeout-left {
   0% {
@@ -10219,13 +10228,19 @@ form .notifier {
   max-width: 365px;
   background-color: #ffffff;
   color: #333333; }
+  .section-contacts .box hr {
+    opacity: 0;
+    visibility: hidden;
+    margin: 5px 0; }
   @media (min-width: 768px) {
     .section-contacts .box {
       padding: 45px;
       -webkit-box-shadow: 0 0 10px rgba(194, 194, 194, 0.5);
               box-shadow: 0 0 10px rgba(194, 194, 194, 0.5); }
       .section-contacts .box hr {
-        margin: 0 !important; } }
+        opacity: 1;
+        visibility: visible;
+        margin: 25.5px -45px; } }
 
 footer {
   font-size: 1.4rem;
