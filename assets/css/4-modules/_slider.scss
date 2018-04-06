@@ -18,6 +18,15 @@
       border-color: $main-color - #222;
     }
   }
+  &.slider-arrow-green {
+    background-color: transparent;
+    color: $secondary-color;
+    border-color: $secondary-color;
+    &:hover {
+      background-color: $secondary-color;
+      color: $white;
+    }
+  }
   span {
     display: inline-block;
   }
@@ -83,4 +92,20 @@
 
 .slick-slide {
   outline: none !important;
+}
+.slider-arrow-abs {
+  &.slider-arrow-prev, &.slider-arrow-next {
+    position: absolute;
+    top:0;
+    bottom:0;
+    margin: auto 0;
+    z-index:10;
+  }
+  &.slider-arrow-prev {
+    left: 10px;
+  }
+  &.slider-arrow-next {
+    right: 10px;
+  }
+
 }

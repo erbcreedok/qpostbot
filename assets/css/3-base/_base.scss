@@ -10,17 +10,24 @@ body {
 a {
   color: $link-color;
 }
-h2 {
+h1, .h1 {
+  font-size: 4.2rem;
+  font-weight: 600;
+}
+h2, .h2 {
   font-size: 3rem;
   font-weight: 600;
   color: inherit;
 }
-h3 {
+h3, .h3 {
   font-size: 2rem;
   font-weight: normal;
   color: inherit;
+  &.bigger {
+    font-size: 2.4rem;
+  }
 }
-h4 {
+h4, .h4 {
   font-size: 1.8rem;
   font-weight: 500;
   color: $black-default;

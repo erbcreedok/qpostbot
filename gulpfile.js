@@ -23,6 +23,7 @@ gulp.task("concatScripts", function() {
         'assets/js/vendor/slick.min.js',
         'assets/js/vendor/jquery.magnific-popup.min.js',
         'assets/js/functions/nav.js',
+        'assets/js/functions/index-nav.js',
         'assets/js/functions.js'
         ])
     .pipe(maps.init())

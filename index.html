@@ -17,12 +17,14 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-md fixed-top">
+    <input type="hidden" value="index" id="sitepage">
+    <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container">
        <a class="navbar-brand" href=".">
            <span class="icon-logo"></span>
        </a>
        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="d-none d-md-inline-block mr-3"> Меню </span>
          <span class="navbar-toggler-icon">
              <span class="navbar-toggler-icon-line"></span>
          </span>
@@ -30,24 +32,24 @@
 
        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
          <ul class="navbar-nav main-nav mx-auto justify-content-around">
-           <li class="nav-item active">
-             <a class="nav-link" href="#main">Главная <span class="sr-only">(current)</span></a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="#services">Услуги</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="#partners">Клиенты/Партнеры</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="#stages">О Компании</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="#contacts">Контакты</a>
-           </li>
-           <li class="nav-item">
-             <a class="nav-link" href="#registration">Сертификация</a>
-           </li>
+             <li class="nav-item active">
+                 <a class="nav-link" href="#main">Главная <span class="sr-only">(current)</span></a>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="#about">О Компании</a>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="#services">Услуги</a>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="#partners">Клиенты/Партнеры</a>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="#certificates">Сертификаты</a>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="#contacts">Контакты</a>
+             </li>
          </ul>
          <ul class="navbar-nav phone-nav">
              <li class="nav-item">
@@ -71,11 +73,11 @@
                         Организация безопасной работы в Интернет, антивирусная и антиспам защита, системы аутентификации пользователей, контроль Интернет- трафика, разграничение доступа к ресурсам Интернет, защита каналов связи (VPN) и другое…
                     </p>
                 </div>
-                <div class="d-flex align-items-center">
-                    <button class="btn btn-primary mr-5">
+                <div class="d-flex align-items-center flex-wrap">
+                    <button class="btn btn-primary mr-5 mb-5 mb-md-0" data-toggle="modal" data-target="#callbackModal">
                         <span class="">Заказать обратный звонок</span>
                     </button>
-                    <div class="d-flex align-items-center slide-arrows">
+                    <div class="d-flex align-items-center slide-arrows mb-5 mb-md-0">
                         <div class="slider-arrow slider-arrow-prev">
                             <span class="icon-arrow-left"></span>
                         </div>
@@ -97,11 +99,11 @@
                         Поставка серверов, рабочих станций и тонких клиентов, коммутационного оборудования, систем хранения данных и систем бесперебойного питания, стойки, шкафы, поставка и внедрение программного обеспечения…
                     </p>
                 </div>
-                <div class="d-flex align-items-center">
-                    <button class="btn btn-primary mr-5">
+                <div class="d-flex align-items-center flex-wrap">
+                    <button class="btn btn-primary mr-5 mb-5 mb-md-0" data-toggle="modal" data-target="#callbackModal">
                         <span class="">Заказать обратный звонок</span>
                     </button>
-                    <div class="d-flex align-items-center slide-arrows">
+                    <div class="d-flex align-items-center slide-arrows mb-5 mb-md-0">
                         <div class="slider-arrow slider-arrow-prev">
                             <span class="icon-arrow-left"></span>
                         </div>
@@ -123,11 +125,11 @@
                         Техническая поддержка системного программного обеспечения, абонентское выездное обслуживание компьютеров, комплексный аутсорсинг информационных технологий (ИТ-аутстаффинг), обслуживание серверов, обслуживание корпоративных систем связи, обслуживание принтерных и копировальных систем, обслуживание корпоративных сайтов…
                     </p>
                 </div>
-                <div class="d-flex align-items-center">
-                    <button class="btn btn-primary mr-5">
+                <div class="d-flex align-items-center flex-wrap">
+                    <button class="btn btn-primary mr-5 mb-5 mb-md-0" data-toggle="modal" data-target="#callbackModal">
                         <span class="">Заказать обратный звонок</span>
                     </button>
-                    <div class="d-flex align-items-center slide-arrows">
+                    <div class="d-flex align-items-center slide-arrows mb-5 mb-md-0">
                         <div class="slider-arrow slider-arrow-prev">
                             <span class="icon-arrow-left"></span>
                         </div>
@@ -142,7 +144,8 @@
             </div>
         </section>
     </section>
-    <section id="about" data-waypoint="main" class="section-about pt-12 pb-6">
+    <section data-waypoint="main" class="py-1"></section>
+    <section id="about" class="section-about pt-12 pb-6">
         <div class="container color-black-default">
             <h3 class="mb-4 color-gray">
                 <span class="text-uppercase">О Компании</span>
@@ -160,7 +163,7 @@
                             Наша цель – повысить эффективность бизнеса клиентов за счет улучшения поддерживающей IT-инфраструктуры...
                         </p>
                         <div class="row" style="margin-bottom: 6rem">
-                            <div class="col-4">
+                            <div class="col-12 mb-5 col-md-4 mb-md-0">
                                 <div class="number-container">
                                     <p class="big-number">
                                         №1
@@ -170,7 +173,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-12 mb-5 col-md-4 mb-md-0">
                                 <div class="number-container">
                                     <p class="big-number">
                                         5
@@ -180,7 +183,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="col-4">
+                            <div class="col-12 mb-3 col-md-4 mb-md-0">
                                 <div class="number-container">
                                     <p class="big-number">
                                         24/7
@@ -191,14 +194,14 @@
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-primary">
+                        <button class="btn btn-primary" data-toggle="modal" data-target="#callbackModal">
                             <span>
                                 Сотрудничать с нами
                             </span>
                         </button>
                     </div>
                 </div>
-                <div class="col-md-5 text-right">
+                <div class="col-md-5 d-md-block d-none text-right">
                     <img src="assets/img/2018-circle.jpg" alt="">
                 </div>
             </div>
@@ -214,14 +217,14 @@
             </h2>
             <div class="row">
                 <div class="col-md-5">
-                    <ul class="color-lightgray-default vertical-nav" style="max-width: 355px">
+                    <ul class="color-lightgray-default row-tabs vertical-nav">
                         <li>
                             ИТ - Аутсорсинг
                         </li>
                         <li>
                             Внедрение программных решении
                         </li>
-                        <li class="active">
+                        <li>
                             Информационная безопасность
                         </li>
                         <li>
@@ -235,17 +238,86 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-7">
-                    <div class="row">
-                        <div class="col-2">
+                <div class="col-md-7 row-list px-5 px-md-0">
+                    <div class="">
+                        <div class="row px-5 px-md-0">
+                        <div class="col-12 col-md-2 mb-3 mb-md-0 icon-container">
                             <span class="icon-directions color-secondary"></span>
                         </div>
-                        <div class="col-10 ml-auto">
-                            <p style="max-width: 500px;">
+                        <div class="col-12 col-md-10 ml-auto">
+                            <p class="paragraph">
+                                Техническая поддержка системного программного обеспечения, абонентское выездное обслуживание компьютеров, комплексный аутсорсинг информационных технологий (ИТ-аутстаффинг), обслуживание серверов, обслуживание корпоративных систем связи, обслуживание принтерных и копировальных систем, обслуживание корпоративных сайтов
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="">
+                        <div class="row px-5 px-md-0">
+                        <div class="col-12 col-md-2 mb-3 mb-md-0 icon-container">
+                            <span class="icon-directions color-secondary"></span>
+                        </div>
+                        <div class="col-12 col-md-10 ml-auto">
+                            <p class="paragraph">
+                                Внедрение серверов, серверных систем, основных компонентов сервера, системных каталогов, виртуализация, терминальные решения, кластеризация, решения на базе 1С, интеграция приложений, решения по миграции...
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="">
+                        <div class="row px-5 px-md-0">
+                        <div class="col-12 col-md-2 mb-3 mb-md-0 icon-container">
+                            <span class="icon-directions color-secondary"></span>
+                        </div>
+                        <div class="col-12 col-md-10 ml-auto">
+                            <p class="paragraph">
                                 Организация безопасной работы в Интернет, антивирусная и антиспам защита, системы аутентификации пользователей, контроль Интернет-трафика, разграничение доступа к ресурсам Интернет, защита каналов связи (VPN), системы предотвращения утечки информации (DLP), системы обнаружения и предотвращения вторжений (IDS/IPS), контроль доступа к периферийным устройствам и портам, резервное копирование и шифрование данных...
                             </p>
                         </div>
                     </div>
+                    </div>
+                    <div class="">
+                        <div class="row px-5 px-md-0">
+                        <div class="col-12 col-md-2 mb-3 mb-md-0 icon-container">
+                            <span class="icon-directions color-secondary"></span>
+                        </div>
+                        <div class="col-12 col-md-10 ml-auto">
+                            <p class="paragraph">
+                                Разработка архитектуры ИТ-решений, технический/проектный консалтинг, разработка ИТ-стратегии, аудит информационной системы, аудит информационной безопасности, разработка политики / мониторинг информационной безопасности, разработка планов восстановления (DRP), управление лицензиями, инвентаризация программно-аппаратных ресурсов...
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="">
+                        <div class="row px-5 px-md-0">
+                        <div class="col-12 col-md-2 mb-3 mb-md-0 icon-container">
+                            <span class="icon-directions color-secondary"></span>
+                        </div>
+                        <div class="col-12 col-md-10 ml-auto">
+                            <p class="paragraph">
+                                Организация безопасной работы в Интернет, антивирусная и антиспам защита, системы аутентификации пользователей, контроль Интернет-трафика, разграничение доступа к ресурсам Интернет, защита каналов связи (VPN), системы предотвращения утечки информации (DLP), системы обнаружения и предотвращения вторжений (IDS/IPS), контроль доступа к периферийным устройствам и портам, резервное копирование и шифрование данных...
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="">
+                    <div class="row px-5 px-md-0">
+                        <div class="col-12 col-md-2 mb-3 mb-md-0 icon-container">
+                            <span class="icon-directions color-secondary"></span>
+                        </div>
+                        <div class="col-12 col-md-10 ml-auto">
+                            <p class="paragraph">
+                                Разработка архитектуры ИТ-решений, технический/проектный консалтинг, разработка ИТ-стратегии, аудит информационной системы, аудит информационной безопасности, разработка политики / мониторинг информационной безопасности, разработка
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5 mt-md-0">
+                <div class="col-12 text-center text-md-left">
+                    <a href="services.html">
+                        Посмотреть все услуги
+                    </a>
                 </div>
             </div>
         </div>
@@ -261,25 +333,35 @@
             <p class="text-center mx-auto" style="max-width: 770px; margin-bottom: 40px">
                 Наша цель – повысить эффективность бизнеса клиентов за счет улучшения поддерживающей IT-инфраструктуры. Гарантией качественной работы TechVision является опыт и квалификация сотрудников, а также отличное знание всего спектра предлагаемых услуг и продукции.
             </p>
-            <p class="select-for text-center font-weight-bold text-uppercase color-gray" style="margin-bottom: 40px">
-                <a class="active" href="#">Клиенты</a> / <a href="#">Партнеры</a>
+            <p class="select-for text-center font-weight-bold text-uppercase color-gray logo-tabs" style="margin-bottom: 40px">
+                <a class="active logo-tab" href="javascript:void(0)" data-goto="0">Клиенты</a> / <a href="javascript:void(0)" data-goto="1" class="partner-tab">Партнеры</a>
             </p>
-            <div class="row" style="margin-bottom: 80px">
-                <div class="col-md-9 d-none d-md-block mx-auto">
-                    <img src="assets/img/logos@2x.jpg" alt="" width="100%">
+            <div class="logo-list" style="margin-bottom: 80px">
+                <div class="row px-6 p-md-0">
+                    <div class="col-md-9 d-none d-md-block mx-auto">
+                        <img src="assets/img/logos@2x.jpg" alt="" width="100%">
+                    </div>
+                    <div class="col-12 d-md-none mx-auto">
+                        <img src="assets/img/logos-mobile.jpg" alt="" width="100%">
+                    </div>
                 </div>
-                <div class="col-12 d-md-none mx-auto">
-                    <img src="assets/img/logos-mobile.jpg" alt="" width="100%">
+                <div class="row px-6 p-md-0">
+                    <div class="col-md-9 d-none d-md-block mx-auto">
+                        <img src="assets/img/partners.jpg" alt="" width="100%">
+                    </div>
+                    <div class="col-12 d-md-none mx-auto">
+                        <img src="assets/img/partners-mobile.jpg" alt="" width="100%">
+                    </div>
                 </div>
             </div>
             <div class="text-center">
-                <a href="#">
+                <a href="partners.html">
                     Узнать подробнее
                 </a>
             </div>
         </div>
     </section>
-    <section id="certificates" data-waypoint="partners" class="section-certificates bg-whitegray py-12">
+    <section id="certificates" class="section-certificates bg-whitegray py-12">
         <div class="container color-black-default">
             <h3 class="text-center text-uppercase color-lightgray-default mb-4">
                 Клиенты и партнеры
@@ -371,25 +453,25 @@
                 </div>
             </div>
             <div class="text-center">
-                <button class="btn btn-primary">
+                <button class="btn btn-primary" data-toggle="modal" data-target="#callbackModal">
                     <span>Получить консультацию</span>
                 </button>
             </div>
         </div>
     </section>
-    <footer class="footer py-6">
+    <footer class="footer pt-6 pb-5">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-4 text-md-left text-center">
-                    <a href="#" class="d-block mb-5">
+                <div class="col-12 col-md-4 mb-5 text-md-left text-center">
+                    <a href="#" class="d-block mb-md-5">
                         <img src="assets/img/logo.jpg" height="35px">
                     </a>
                     <p class="mb-0 font-weight-bold">
                         РАБОТАЕМ НА СОВЕСТЬ!
                     </p>
                 </div>
-                <div class="col-12 col-md-4 text-center">
-                    <p class="mx-auto mt-3" style="max-width: 240px; margin-bottom: 25px">2018 © TechVision</p>
+                <div class="col-12 col-md-4 mb-5 text-center">
+                    <p class="mx-auto mb-md-5" style="max-width: 240px">2018 © TechVision</p>
                     <p class="social-links color-white">
                         <a href="#" class="d-inline-block round-25 bg-gray">
                             <span class="icon-facebook"></span>
@@ -402,8 +484,8 @@
                         </a>
                     </p>
                 </div>
-                <div class="col-12 col-md-4 text-center text-md-right">
-                    <p class="mb-5">
+                <div class="col-12 col-md-4 mb-5 text-center text-md-right">
+                    <p class="mb-md-5">
                         Сайт разработан в студии <br><span class="font-weight-bold">Elefanto</span>
                     </p>
                     <p>
@@ -415,6 +497,55 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal fade" id="callbackModal" tabindex="-1" role="dialog" aria-labelledby="callbackModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-form" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p class="modal-title" id="callbackModalLabel" style="font-size: 2.6rem">Отправьте нам заявку и мы свяжемся с вами</p>
+                    <button type="button" class="close modal-closer" style="font-size: 3.6rem;line-height: 3.9rem;" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <hr class="modal-hr">
+                    <form id="callbackForm" class="row">
+                        <div class="form-group col-md-6 mb-5">
+                            <label for="name">Имя: *</label>
+                            <input type="text" required name="name" id="name" class="form-control" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group col-md-6 mb-5">
+                            <label for="phone">Номер телефона: *</label>
+                            <input type="text" required name="phone" id="phone" class="form-control" placeholder="Ваш номер телефона">
+                        </div>
+                        <div class="form-group col-md-12 mb-20">
+                            <label for="extra">Дополнительно: </label>
+                            <textarea type="text" name="extra" id="extra" class="form-control" placeholder="Введите ваше сообщение"></textarea>
+                        </div>
+                        <p class="col-md-12 notifier" style="margin-bottom: 46px">
+                            * Внимание! Мы не передаем никаких данных 3-м лицам. Все конфиденциально.
+                        </p>
+                        <div class="col-md-12">
+                            <button class="btn btn-primary">
+                                <span class="ajax-status">Отправить</span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="modal-dialog modal-thanks" style="display: none" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <p class="h2 text-center font-weight-bold my-6">
+                        Большое спасибо!<br>
+                        Ваша заявка принята :D
+                    </p>
+                    <p class="notifier text-right">
+                        <a href="#" data-dismiss="modal" class="color-gray">Закрыть</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- build:js -->
     <script src="assets/js/main.js"></script>
      <!-- endbuild -->
