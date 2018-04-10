@@ -98,6 +98,16 @@ $( document ).ready(function() {
             }
         ]
     });
+    $('.certificates').magnificPopup({
+        delegate: '.certificate:not(.slick-cloned) a',
+        type: 'image',
+        tLoading: 'Загрузка изображения #%curr%...',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1]
+        }
+    });
 });
 
 
