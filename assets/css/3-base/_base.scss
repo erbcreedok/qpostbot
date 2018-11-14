@@ -3,7 +3,7 @@ html {
   font-size: 10px;
 }
 body {
-  font-family: 'PTSans', sans-serif;
+  font-family: 'GTWalsheimPro', sans-serif;
   font-size: 1.6rem;
 }
 
@@ -11,12 +11,12 @@ a {
   color: $link-color;
 }
 h1, .h1 {
-  font-size: 4.2rem;
-  font-weight: 600;
+  font-size: 6.4rem;
+  font-weight: bold;
 }
 h2, .h2 {
   font-size: 3rem;
-  font-weight: 600;
+  font-weight: bold;
   color: inherit;
 }
 h3, .h3 {
@@ -29,6 +29,6 @@ h3, .h3 {
 }
 h4, .h4 {
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: bold;
   color: $black-default;
 }

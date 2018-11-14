@@ -1,16 +1,16 @@
 {
-  "name": "bootstrap-4-boiler-plate",
+  "name": "QPoint Bot",
   "version": "1.0.0",
-  "description": "a bootstrap 4 boiler plate with sass, concatenation, minification, autoprefixer, sourcemaps, browser-sync, git and gulp task runner",
+  "description": "Разработка и интеграция чат ботов, Чат боты для CRM",
   "main": "index.js",
   "scripts": {
     "test": "echo \\\"Error: no test specified\\\" && exit 1"
   },
-  "author": "wapbamboogie",
+  "author": "yerbols",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/wapbamboogie/bootstrap-4-boilerplate"
+    "url": "https://github.com/erbcreedok/qpostbot"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",

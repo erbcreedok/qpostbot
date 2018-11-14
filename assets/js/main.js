@@ -14463,22 +14463,32 @@ $(document).ready(function() {
 $( document ).ready(function() {
     if ($('#sitepage').val() !== 'index' ) return;
 
-    $('.first-section').slick({
+    var firstSectionSlides = $('.first-section-slides');
+    var firstSectionSliderNavItems = $('.first-section-slider-nav>div>.slider-nav-item');
+    firstSectionSlides.slick({
         arrows: false,
-        dots: false,
+        dots: true,
         draggable: false,
         swipe: false,
         fade: true,
         touchMove: false,
         autoplay: true,
-        autoplaySpeed: 8000
+        autoplaySpeed: 5000,
     });
-    $('.first-section .slider-arrow.slider-arrow-next').click(function () {
-        $('.first-section').slick('slickNext');
+    firstSectionSliderNavItems.on('click', function() {
+        var index = $(firstSectionSliderNavItems).index(this);
+        firstSectionSlides.slick('slickGoTo', index);
     });
-    $('.first-section .slider-arrow.slider-arrow-prev').click(function () {
-        $('.first-section').slick('slickPrev');
+    firstSectionSlides.on('beforeChange', function(event, slick, currentSlide, nextSlide){
+        setActiveSlide(nextSlide);
     });
+    setActiveSlide(0);
+    function setActiveSlide(index) {
+        firstSectionSliderNavItems.removeClass('active');
+        firstSectionSliderNavItems.eq(index).addClass('active');
+    }
+
+
 
 
     $('.row-list').slick({

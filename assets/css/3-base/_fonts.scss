@@ -1,38 +1,43 @@
 //Font - Regular (400)
 @font-face {
-  font-family: 'PTSans';
-  src: local('PTSans'), url($path-font-main + '/PTSans-Regular.ttf') format('truetype');
+  font-family: 'GTWalsheimPro';
+  src: local('GTWalsheimPro'), url($path-font-main + '/GTWalsheimPro.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
-//PTSans - Regular Italic (400)
+
+//GTWalsheimPro - Bold (700)
 @font-face {
-  font-family: 'PTSans';
-  src: local('PTSans Italic'), url($path-font-main + '/PTSans-Italic.ttf') format('truetype');
+  font-family: 'GTWalsheimPro';
+  src: local('GTWalsheimPro Bold'), url($path-font-main + '/GTWalsheimPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+//GTWalsheimPro - Medium (500)
+@font-face {
+  font-family: 'GTWalsheimPro';
+  src: local('GTWalsheimPro Medium'), url($path-font-main + '/GTWalsheimPro-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+//Roboto - Regular (400)
+@font-face {
+  font-family: 'Roboto';
+  src: url($path-fonts + '/Roboto/Roboto-Regular.ttf') format('truetype');
   font-weight: normal;
-  font-style: italic;
-}
-//PTSans - Bold (700)
-@font-face {
-  font-family: 'PTSans';
-  src: local('PTSans Bold'), url($path-font-main + '/PTSans-Bold.ttf') format('truetype');
-  font-weight: bold;
   font-style: normal;
 }
-//PTSans - Bold Italic (700)
+
+//Roboto - Light (300)
 @font-face {
-  font-family: 'PTSans';
-  src: local('PTSans Bold Italic'), url($path-font-main + '/PTSans-BoldItalic.ttf') format('truetype');
-  font-weight: bold;
-  font-style: italic;
-}
-//GothamPro - Bold (700)
-@font-face {
-  font-family: 'GothamPro';
-  src: local('GothamPro Bold '), url($path-fonts + '/GothamPro/GothamPro-Bold.ttf') format('truetype');
-  font-weight: bold;
+  font-family: 'Roboto';
+  src: url($path-fonts + '/Roboto/Roboto-Light.ttf') format('truetype');
+  font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'icomoon';
   src:  url($path-fonts + '/icomoon/icomoon.eot?1jcwml');

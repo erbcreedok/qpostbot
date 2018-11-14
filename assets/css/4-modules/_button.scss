@@ -1,21 +1,24 @@
 .btn {
-  border-radius: 25px;
-  min-height: 50px;
-  min-width: 250px;
+  border-radius: 40px;
+  min-height: 40px;
+  min-width: 165px;
   font-size: 1.6rem;
+  font-weight: normal;
+  color: $blue;
+  background: $white;
   &.btn-primary {
-    background: $main-color;
-    border-color: $main-color;
+    background: linear-gradient(266deg, $green, $green-secondary);;
+    border-color: transparent;
+    color: $white;
   }
   &.btn-secondary {
     background: $white;
     border-color: $white;
     color: $black;
-    font-weight: 500;
+    font-weight: 400;
   }
   &.btn-primary:not(:disabled):not(.disabled):active, &.btn-primary:not(:disabled):not(.disabled).active, & .show > .btn-primary.dropdown-toggle {
-    background-color: $main-color - #111;
-    border-color: $main-color - #111;
+    background: linear-gradient(266deg, $green - #111, $green-secondary - #111);
   }
   &.btn-secondary:not(:disabled):not(.disabled):active, &.btn-secondary:not(:disabled):not(.disabled).active, & .show > .btn-secondary.dropdown-toggle {
     background-color: $white - #040404;
