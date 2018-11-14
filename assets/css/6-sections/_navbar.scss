@@ -139,10 +139,16 @@
       color: $white;
     }
     .nav-link, .nav-link:hover {
-      color: #white;
+      color: $white;
     }
   }
   @include media-breakpoint-up(md) {
+    .main-nav .nav-item .nav-link{
+      color: $blue-low;
+    }
+    .main-nav .nav-item.active .nav-link {
+      color: $white;
+    }
     .main-nav .nav-item.active{
       @include underline($white);
     }

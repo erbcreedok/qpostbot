@@ -4,6 +4,9 @@
 .pt-12 {
   padding-top: 120px;
 }
+.pt-11 {
+  padding-top: 110px !important;
+}
 .pt-50 {
   padding-top: 50px;
 }
@@ -12,6 +15,9 @@
 }
 .pb-12 {
   padding-bottom: 120px;
+}
+.pb-11 {
+  padding-bottom: 110px !important;
 }
 .pb-50 {
   padding-bottom: 50px;
@@ -22,6 +28,10 @@
 .py-12 {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+.py-11 {
+  padding-top: 110px !important;
+  padding-bottom: 110px !important;
 }
 .py-6 {
   padding-top: 60px;
@@ -143,4 +153,29 @@
 .gradient-bg {
   background-color: $blue;
   background-image: linear-gradient(to right, $blue-gr1, $blue-gr2);
+}
+
+.section-heading {
+  color: $black-default;
+  font-size: 3.6rem;
+  margin-bottom: 20px;
+  font-weight: 500;
+  @include media-breakpoint-down(md) {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  &.inversive {
+    color: white;
+  }
+}
+.section-subheading {
+  font-family: 'Roboto', sans-serif;
+  color: $lightgray-default;
+  font-size: 2rem;
+  @include media-breakpoint-down(md) {
+    font-size: 1.4rem;
+  }
+  &.inversive {
+    color: rgba(white, .5);
+  }
 }
