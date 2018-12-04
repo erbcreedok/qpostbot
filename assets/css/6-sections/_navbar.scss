@@ -19,6 +19,16 @@
 }
 .nav-item {
   white-space: nowrap;
+  &.dropdown {
+    opacity: 1 !important;
+  }
+  .dropdown-menu.show {
+    display: block;
+    top: auto;
+    position: fixed;
+    left: auto;
+    margin-top: -30px;
+  }
 }
 .navbar-toggler {
   &:focus {

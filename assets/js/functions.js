@@ -44,8 +44,8 @@ $( document ).ready(function() {
     logoList.slick({
         arrows: true,
         adaptiveHeight: true,
-        prevArrow: '<div class="slider-arrow-prev slider-arrow-abs">Предыдущий</div>',
-        nextArrow: '<div class="slider-arrow-next slider-arrow-abs">Следующий</div>'
+        prevArrow: '<div class="slider-arrow-prev slider-arrow-abs"><span class="show-ru">Предыдущий</span><span class="show-en">Previous</span></div>',
+        nextArrow: '<div class="slider-arrow-next slider-arrow-abs"><span class="show-ru">Следующий</span><span class="show-en">Next</span></div>'
     });
     $('.logo-tabs a').click(function() {
         if (this.classList.contains('active')) return;

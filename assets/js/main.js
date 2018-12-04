@@ -14418,7 +14418,7 @@ $(document).ready(function() {
     if ($('#sitepage').val() !== 'index' ) return;
     var navItems = $('.navbar .main-nav li');
 
-    $('.navbar .main-nav li a').bind('click', function(e) {
+    $('.navbar .main-nav li.nav-item:not(.dropdown) a.nav-link').bind('click', function(e) {
         e.preventDefault();
         var id = $(this).attr('href');
         var elementOffset = document.querySelector(id).offsetTop;
@@ -14505,8 +14505,8 @@ $( document ).ready(function() {
     logoList.slick({
         arrows: true,
         adaptiveHeight: true,
-        prevArrow: '<div class="slider-arrow-prev slider-arrow-abs">Предыдущий</div>',
-        nextArrow: '<div class="slider-arrow-next slider-arrow-abs">Следующий</div>'
+        prevArrow: '<div class="slider-arrow-prev slider-arrow-abs"><span class="show-ru">Предыдущий</span><span class="show-en">Previous</span></div>',
+        nextArrow: '<div class="slider-arrow-next slider-arrow-abs"><span class="show-ru">Следующий</span><span class="show-en">Next</span></div>'
     });
     $('.logo-tabs a').click(function() {
         if (this.classList.contains('active')) return;

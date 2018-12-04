@@ -81,13 +81,13 @@ gulp.task('renameSources', function() {
         'js': 'assets/js/main.js',
         'css': 'assets/css/main.css'
     }))
-    .pipe(gulp.dest('dist/'));
+    .pipe(gulp.dest(dist + '/'));
 });
 
 gulp.task("build", ['minifyScripts', 'minifyCss'], function() {
   return gulp.src(['*.html', '*.php', 'favicon.ico',
                    "assets/img/**", "assets/fonts/**"], { base: './'})
-            .pipe(gulp.dest(dist));
+            .pipe(gulp.dest(dist + '/'));
 });
 
 gulp.task('serve', ['watchFiles'], function(){

@@ -179,3 +179,6 @@
     color: rgba(white, .5);
   }
 }
+
+body.lang-en .show-ru {display: none !important;}
+body.lang-ru .show-en {display: none !important;}

@@ -2,7 +2,7 @@ $(document).ready(function() {
     if ($('#sitepage').val() !== 'index' ) return;
     var navItems = $('.navbar .main-nav li');
 
-    $('.navbar .main-nav li a').bind('click', function(e) {
+    $('.navbar .main-nav li.nav-item:not(.dropdown) a.nav-link').bind('click', function(e) {
         e.preventDefault();
         var id = $(this).attr('href');
         var elementOffset = document.querySelector(id).offsetTop;

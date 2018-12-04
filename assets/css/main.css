@@ -9631,6 +9631,12 @@ h4, .h4 {
   .section-subheading.inversive {
     color: rgba(255, 255, 255, 0.5); }
 
+body.lang-en .show-ru {
+  display: none !important; }
+
+body.lang-ru .show-en {
+  display: none !important; }
+
 @-webkit-keyframes fadeout-left {
   0% {
     opacity: 1;
@@ -10004,6 +10010,14 @@ input {
 
 .nav-item {
   white-space: nowrap; }
+  .nav-item.dropdown {
+    opacity: 1 !important; }
+  .nav-item .dropdown-menu.show {
+    display: block;
+    top: auto;
+    position: fixed;
+    left: auto;
+    margin-top: -30px; }
 
 .navbar-toggler {
   line-height: 60px;
