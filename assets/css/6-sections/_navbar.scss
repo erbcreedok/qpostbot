@@ -17,6 +17,9 @@
     line-height: 3.5rem;
   }
 }
+.nav-item {
+  white-space: nowrap;
+}
 .navbar-toggler {
   &:focus {
     border: none;

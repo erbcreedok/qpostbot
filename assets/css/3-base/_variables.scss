@@ -9,7 +9,8 @@
 // Asset paths
 $path-image     :   '../img';
 $path-fonts     :  '../fonts';
-$path-font-main: $path-fonts + '/GTWalsheimPro';
+$font-main      : Gilroy;
+$path-font-main: $path-fonts + '/' + $font-main;
 $green: #2bc9b4;
 $green-secondary: #3db0a1;
 $blue: #273fc0;

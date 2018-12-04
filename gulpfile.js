@@ -1,5 +1,6 @@
 "use strict";
 
+var dist = '../qpoint-dist';
 var gulp = require('gulp'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
@@ -37,7 +38,7 @@ gulp.task("minifyScripts", ["concatScripts"], function() {
   return gulp.src("assets/js/main.js")
     .pipe(uglify())
     .pipe(rename('main.js'))
-    .pipe(gulp.dest('dist/assets/js'));
+    .pipe(gulp.dest(dist + '/assets/js'));
 });
 
 gulp.task('compileSass', function() {
@@ -54,7 +55,7 @@ gulp.task("minifyCss", ["compileSass"], function() {
   return gulp.src("assets/css/main.css")
     .pipe(cssmin())
     .pipe(rename('main.css'))
-    .pipe(gulp.dest('dist/assets/css'));
+    .pipe(gulp.dest(dist + '/assets/css'));
 });
 
 gulp.task('watchFiles', function() {
@@ -71,7 +72,7 @@ gulp.task('browser-sync', function() {
 });
 
 gulp.task('clean', function() {
-  del(['dist', 'assets/css/main.css*', 'assets/js/main*.js*']);
+  del([dist, 'assets/css/main.css*', 'assets/js/main*.js*']);
 });
 
 gulp.task('renameSources', function() {
@@ -86,7 +87,7 @@ gulp.task('renameSources', function() {
 gulp.task("build", ['minifyScripts', 'minifyCss'], function() {
   return gulp.src(['*.html', '*.php', 'favicon.ico',
                    "assets/img/**", "assets/fonts/**"], { base: './'})
-            .pipe(gulp.dest('dist'));
+            .pipe(gulp.dest(dist));
 });
 
 gulp.task('serve', ['watchFiles'], function(){

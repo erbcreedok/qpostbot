@@ -1,23 +1,23 @@
 //Font - Regular (400)
 @font-face {
-  font-family: 'GTWalsheimPro';
-  src: local('GTWalsheimPro'), url($path-font-main + '/GTWalsheimPro.ttf') format('truetype');
+  font-family: $font-main;
+  src: local($font-main), url($path-font-main + '/' + $font-main + '-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
-//GTWalsheimPro - Bold (700)
+//Gilroy - Bold (700)
 @font-face {
-  font-family: 'GTWalsheimPro';
-  src: local('GTWalsheimPro Bold'), url($path-font-main + '/GTWalsheimPro-Bold.ttf') format('truetype');
+  font-family: $font-main;
+  src: local('Gilroy Bold'), url($path-font-main + '/' + $font-main + '-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
-//GTWalsheimPro - Medium (500)
+//Gilroy - Medium (500)
 @font-face {
-  font-family: 'GTWalsheimPro';
-  src: local('GTWalsheimPro Medium'), url($path-font-main + '/GTWalsheimPro-Medium.ttf') format('truetype');
+  font-family: $font-main;
+  src: local('Gilroy Medium'), url($path-font-main + '/' + $font-main + '-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }

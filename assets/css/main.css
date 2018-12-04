@@ -9278,20 +9278,20 @@ img.mfp-img {
 
 /* Custom Mixins -------------------- */
 @font-face {
-  font-family: 'GTWalsheimPro';
-  src: local("GTWalsheimPro"), url("../fonts/GTWalsheimPro/GTWalsheimPro.ttf") format("truetype");
+  font-family: Gilroy;
+  src: local(Gilroy), url("../fonts/Gilroy/Gilroy-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
-  font-family: 'GTWalsheimPro';
-  src: local("GTWalsheimPro Bold"), url("../fonts/GTWalsheimPro/GTWalsheimPro-Bold.ttf") format("truetype");
+  font-family: Gilroy;
+  src: local("Gilroy Bold"), url("../fonts/Gilroy/Gilroy-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal; }
 
 @font-face {
-  font-family: 'GTWalsheimPro';
-  src: local("GTWalsheimPro Medium"), url("../fonts/GTWalsheimPro/GTWalsheimPro-Medium.ttf") format("truetype");
+  font-family: Gilroy;
+  src: local("Gilroy Medium"), url("../fonts/Gilroy/Gilroy-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal; }
 
@@ -9386,7 +9386,7 @@ html {
   font-size: 10px; }
 
 body {
-  font-family: 'GTWalsheimPro', sans-serif;
+  font-family: Gilroy, sans-serif;
   font-size: 1.6rem; }
 
 a {
@@ -10002,6 +10002,9 @@ input {
   font-size: 3.5rem;
   line-height: 3.5rem; }
 
+.nav-item {
+  white-space: nowrap; }
+
 .navbar-toggler {
   line-height: 60px;
   -webkit-box-ordinal-group: 2;
@@ -10204,13 +10207,13 @@ input {
 .first-section {
   color: #ffffff; }
   .first-section .subsection {
-    min-height: 100vh;
+    min-height: calc(100vh - 147px);
     padding-top: 100px;
     padding-bottom: 100px;
     background-size: 50% auto;
     background-repeat: no-repeat;
     background-position: top right; }
-    @media (max-width: 991.98px) {
+    @media (max-width: 767.98px) {
       .first-section .subsection {
         background-size: 340px auto;
         padding-top: 220px;
@@ -10226,8 +10229,10 @@ input {
         height: auto;
         line-height: 46.8px;
         min-height: 86px;
-        text-align: center;
         margin-bottom: 10px; } }
+    @media (max-width: 767.98px) {
+      .first-section .main-title {
+        text-align: center; } }
   .first-section .main-info {
     max-width: 530px;
     font-family: 'Roboto', sans-serif;
@@ -10236,7 +10241,7 @@ input {
     font-weight: 300;
     font-size: 2.4rem;
     line-height: 3.6rem; }
-    @media (max-width: 991.98px) {
+    @media (max-width: 767.98px) {
       .first-section .main-info {
         text-align: center;
         font-size: 1.6rem;
@@ -10252,7 +10257,7 @@ input {
     position: absolute;
     right: 50px;
     bottom: 100px; }
-    @media (max-width: 991.98px) {
+    @media (max-width: 767.98px) {
       .first-section .slick-dots {
         left: 20px;
         right: 20px;
